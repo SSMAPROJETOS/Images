@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+body {
+    font-style: bold;
+    font-style: 'Segoe UI';
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+}
+
+head {
+    border-bottom: 1px solid rgb(0,122,126);
+}
+
+div {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 5px;
+    width: 100%;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+
+tfoot {
+    font-size: 12px;
+    font-weight: 0;
+}
+
+th, .th-Inicio, .th-Fim, tfoot {
+    border: 1px solid rgb(85,85,85);
+    color: rgb(0,0,0);
+    text-align: center;
+    padding: 4px; 
+}
+
+td {
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px dashed rgb(0,122,126);
+    border: 1px dashed rgb(85,85,85);
+    font-size: 14px;
+}
+
+.Div-Table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoVale, .LogoSSMA {
+    width: 120px;
+}
+
+.LogoVale {
+    padding-left: 10px;
+}
+
+.LogoSSMA {
+    padding-right: 10px;
+}
+
+.EmailHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    border-bottom: 2px dashed rgb(0,122,126);
+}
+
+.EmailHead-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.EmailHead-title-Head {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.EmailHead-title-Body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.Div-Info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px dashed rgb(0,122,126);
+}
+
+.Div-Info-Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Div-Info-Card-Title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Div-Autorizacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.Div-Autorizacao-Head {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Div-Autorizacao-Body {
+    text-align: center;
+}
+
+.td-Lote {
+    width: 75px;
+}
+
+.td-Assinatura {
+    width: 175px;
+}
+
+.tfoot-Equipe {
+    width: 50px;
+}
+       </style>
+
+        <div class="EmailHead">
+            <div>
+                <img class="LogoVale" src="https://raw.githubusercontent.com/SSMAPROJETOS/Images/main/Logos/Vale.png">
+            </div>
+
+            <div class="EmailHead-title">
+                <div class="EmailHead-title-Head">
+                    Exames de Saúde  
+                </div>
+                
+                <div class="EmailHead-title-Body" >
+                    <div class="EmailHead-title-Body-Teste">
+                        Toxicológico e Etiloteste
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <img class="LogoSSMA" src="https://raw.githubusercontent.com/SSMAPROJETOS/Images/main/Logos/SSMA.png">
+            </div>
+        </div>
+    </head>
+
+    <body>
+        <div class="Div-Info">
+            <div class="Div-Info-Card">
+                <div class="Div-Info-Card-Title">
+                    Data
+                </div>
+
+                <div class="Div-Info-Card-Body">
+                    14/06/2023
+                </div>
+            </div>
+
+            <div class="Div-Info-Card">
+                <div class="Div-Info-Card-Title">
+                    Empresa
+                </div>
+
+                <div class="Div-Info-Card-Body">
+                    Contoso
+                </div>
+            </div>
+
+            <div class="Div-Info-Card">
+                <div class="Div-Info-Card-Title">
+                    Contrato
+                </div>
+
+                <div class="Div-Info-Card-Body">
+                    Contrato teste área 1 parada por motivos obvios
+                </div>
+            </div>
+
+            <div class="Div-Info-Card">
+                <div class="Div-Info-Card-Title">
+                    Efetivo
+                </div>
+
+                <div class="Div-Info-Card-Body">
+                    1
+                </div>
+            </div>
+
+            <div class="Div-Info-Card">
+                <div class="Div-Info-Card-Title">
+                    Quantidade a testar
+                </div>
+
+                <div class="Div-Info-Card-Body">
+                    1
+                </div>
+            </div>
+        </div>
+
+        <div class="Div-Autorizacao">
+            <div class="Div-Autorizacao-Head">
+                Autorização
+            </div>
+
+            <div class="Div-Autorizacao-Body">
+                Estou de acordo e autorizo, nesta data a realização de coleta de material biológico para análise Toxicológica e realização de Etiloteste
+            </div>
+        </div>
+
+        <div class="Div-Table">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="th-Nome", rowspan="2", colspan="2">
+                            Nome
+                        </th>
+
+                        <th class="th-CPF", rowspan="2">
+                            CPF
+                        </th>
+
+                        <th class="th-Funcao", rowspan="2">
+                            Função
+                        </th>
+
+                        <th class="th-Toxicologico", colspan="2">
+                            Toxicolígico
+                        </th>
+
+                        <th class="th-Etiloteste", colspan="2">
+                            Etiloteste
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th class="th-Toxicologico-Lote">
+                            Lote
+                        </th>
+
+                        <th class="th-Toxicologico-Assinatura">
+                            Assinatura
+                        </th>
+
+                        <th class="th-Etiloteste-Lote">
+                            Lote
+                        </th>
+
+                        <th class="th-Etiloteste-Assinatura">
+                            Assinatura
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- INICIO -->
+
+                    <tr>
+                        <td>
+                            1º
+                        </td>
+
+                        <td class="td-Nome">
+                            Neymar Filho dos Santos Neves Golsalves
+                        </td>
+
+                        <td>
+                            40028922
+                        </td>
+
+                        <td>
+                            Mestre de Obra
+                        </td>
+
+                        <td class="td-Lote"></td>
+
+                        <td class="td-Assinatura"></td>
+
+                        <td class="td-Lote"></td>
+
+                        <td class="td-Assinatura"></td>
+                    </tr>
+
+                    <!-- FIM -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th class="tfoot-Equipe" scope="row", rowspan="2">
+                            Equipe
+                        </th>
+
+                        <td colspan="4", rowspan="2">
+
+                        </td>
+
+                        <th scope="row", rowspan="2">
+                            Responsável da empresa por acompanhar os testes.
+                        </th>
+
+                        <th scope="row">
+                            Nome
+                        </th>
+
+                        <td>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <th scope="row">
+                            Assinatura
+                        </th>
+
+                        <td>
+
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
+</html>
